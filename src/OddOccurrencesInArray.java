@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Scanner;
 
@@ -18,6 +19,6 @@ public class OddOccurrencesInArray {
                 set.add(A[i]);
             }
         }
-        return (int) set.toArray(new Integer[0])[0];
+        return set.toArray(new Integer[set.size()])[0];
     }
 }
